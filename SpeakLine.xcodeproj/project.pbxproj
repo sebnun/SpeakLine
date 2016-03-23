@@ -10,6 +10,8 @@
 		9E63A8161CA34C5A0077E1FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E63A8151CA34C5A0077E1FB /* AppDelegate.swift */; };
 		9E63A8181CA34C5A0077E1FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E63A8171CA34C5A0077E1FB /* Assets.xcassets */; };
 		9E63A81B1CA34C5A0077E1FB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E63A8191CA34C5A0077E1FB /* MainMenu.xib */; };
+		9E63A8241CA34D520077E1FB /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E63A8221CA34D520077E1FB /* MainWindowController.swift */; };
+		9E63A8251CA34D520077E1FB /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E63A8231CA34D520077E1FB /* MainWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +20,8 @@
 		9E63A8171CA34C5A0077E1FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E63A81A1CA34C5A0077E1FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		9E63A81C1CA34C5A0077E1FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E63A8221CA34D520077E1FB /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		9E63A8231CA34D520077E1FB /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 				9E63A8171CA34C5A0077E1FB /* Assets.xcassets */,
 				9E63A8191CA34C5A0077E1FB /* MainMenu.xib */,
 				9E63A81C1CA34C5A0077E1FB /* Info.plist */,
+				9E63A8221CA34D520077E1FB /* MainWindowController.swift */,
+				9E63A8231CA34D520077E1FB /* MainWindowController.xib */,
 			);
 			path = SpeakLine;
 			sourceTree = "<group>";
@@ -117,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E63A8181CA34C5A0077E1FB /* Assets.xcassets in Resources */,
+				9E63A8251CA34D520077E1FB /* MainWindowController.xib in Resources */,
 				9E63A81B1CA34C5A0077E1FB /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -128,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E63A8241CA34D520077E1FB /* MainWindowController.swift in Sources */,
 				9E63A8161CA34C5A0077E1FB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +279,7 @@
 				9E63A8211CA34C5A0077E1FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
