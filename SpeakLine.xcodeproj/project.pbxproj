@@ -12,6 +12,7 @@
 		9E63A81B1CA34C5A0077E1FB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E63A8191CA34C5A0077E1FB /* MainMenu.xib */; };
 		9E63A8241CA34D520077E1FB /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E63A8221CA34D520077E1FB /* MainWindowController.swift */; };
 		9E63A8251CA34D520077E1FB /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E63A8231CA34D520077E1FB /* MainWindowController.xib */; };
+		9E8453B71CADD24000752D14 /* PreferenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8453B61CADD24000752D14 /* PreferenceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9E63A81C1CA34C5A0077E1FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E63A8221CA34D520077E1FB /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		9E63A8231CA34D520077E1FB /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+		9E8453B61CADD24000752D14 /* PreferenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				9E63A81C1CA34C5A0077E1FB /* Info.plist */,
 				9E63A8221CA34D520077E1FB /* MainWindowController.swift */,
 				9E63A8231CA34D520077E1FB /* MainWindowController.xib */,
+				9E8453B61CADD24000752D14 /* PreferenceManager.swift */,
 			);
 			path = SpeakLine;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E63A8241CA34D520077E1FB /* MainWindowController.swift in Sources */,
+				9E8453B71CADD24000752D14 /* PreferenceManager.swift in Sources */,
 				9E63A8161CA34C5A0077E1FB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

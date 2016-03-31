@@ -9,6 +9,8 @@
 import Cocoa
 
 class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NSWindowDelegate, NSTableViewDataSource, NSTableViewDelegate {
+    
+    let preferenceManager = PreferenceManager()
 
     @IBOutlet weak var tableView: NSTableView!
     
@@ -34,7 +36,7 @@ class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NSW
         updateButtons()
         speechSynth.delegate = self
         
-        let defaultVoice = NSSpeechSynthesizer.defaultVoice()
+        let defaultVoice = preferenceManager.activeVoice!
         
         if let defaultRow = voices.indexOf(defaultVoice) {
             
@@ -42,6 +44,8 @@ class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NSW
             tableView.selectRowIndexes(indices, byExtendingSelection: false)
             tableView.scrollRowToVisible(defaultRow)
         }
+        
+        textfield.stringValue = preferenceManager.activeText!
     }
     
     override var windowNibName: String? {
@@ -123,5 +127,13 @@ class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NSW
         
         let voice = voices[row]
         speechSynth.setVoice(voice)
+        
+        preferenceManager.activeVoice = voice
+    }
+    
+    //MARK: - NSTextFieldDelegate
+    
+    override func controlTextDidChange(obj: NSNotification) {
+        preferenceManager.activeText = textfield.stringValue
     }
 }
